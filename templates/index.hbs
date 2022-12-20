@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type= "text/css" href="../static/styles/reset.css">
     <link rel="stylesheet" type= "text/css" href="../static/styles/style.css">
     <title>Document</title>
 </head>
 <body>
     <form action="encrypt" method="post">
-        <input type="text" name="text" placeholder="Wprowadź hasło do zaszyfrowania">
-        <input type="text" name="key" placeholder="Wprowadź klucz">
+        <h1>Encode/Decode Vigenere</h1>
+        <input type="text" name="text" placeholder="TEXT">
+        <input type="text" name="key" placeholder="KEY">
         <select name="select">
-            <option value="encrypt">Szyfruj</option>
-            <option value="decrypt">Deszyfruj</option>
+            <option value="encrypt">Encode</option>
+            <option value="decrypt">Decode</option>
         </select>
         <input type="submit" value="zatwierdź">
         <p>{{result}}</p>

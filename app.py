@@ -1,23 +1,7 @@
 from flask import Flask, render_template, request
+from vegenere import encode_with_vigenere
 
 app = Flask(__name__)
-
-def encode_with_vigenere(text, key, want):
-    text = text.upper()
-    key = key.upper()
-    result = ''
-    for i in range(len(text)):
-        if text[i] == ' ':
-            result += ' '
-        else:
-            if want == 'encrypt':
-                result += chr((ord(text[i]) + ord(key[i % len(key)])) % 26 + ord('A'))
-            else:
-                result += chr((ord(text[i]) - ord(key[i % len(key)])) % 26 + ord('A'))
-    return result
-
-
-
 
 @app.route('/', methods=['GET', 'POST'])
 def index():

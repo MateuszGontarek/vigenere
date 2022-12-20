@@ -11,12 +11,22 @@ body {
     height: 100vh;
     text-align: center;
 }
+
 form {
     width: 100%;
     max-width: 330px;
     padding: 15px;
     margin: 0 auto;
+    border-radius: 20px;
+    border: 2px solid #ff6f00;
 }
+
+h1 {
+    color: #ff6f00;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
 select {
     background-color: #000000;
     border: 1px solid #000000;
@@ -28,11 +38,13 @@ select {
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     width: 100%;
 }
+
 select:hover, select:focus, select:active {
     background-color: #111;
     color: #ffffff;
     outline: none;
 }
+
 option {
     background-color: #000000;
     border: 1px solid #000000;
@@ -44,6 +56,7 @@ option {
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     width: 100%;
 }
+
 input[type=text] {
     background-color: #000000;
     border: 1px solid #000000;
@@ -53,8 +66,12 @@ input[type=text] {
     height: 34px;
     padding: 6px 12px;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-    width: 100%;
+    width: 300px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
+
 input[type=text]:focus, input[type=text]:hover, input[type=text]:active {
     background-color: #111;
     color: #ffffff;
@@ -62,27 +79,26 @@ input[type=text]:focus, input[type=text]:hover, input[type=text]:active {
 
 }
 
-
-
-
 input[type=submit] {
-    background-color: #000000;
-    border: 1px solid #000000;
+    background-color: #ff6f00;
     border-radius: 4px;
     color: #ffffff;
-    cursor: pointer;
     font-size: 14px;
     height: 34px;
     padding: 6px 12px;
-    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: background-color ease-in-out .5s;
     width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
-
-input[type="submit"]:active, input[type="submit"]:focus, input[type="submit"]:hover {
-    background-color: #000000;
-    border-color: #000000;
-    color: lightgreen;
+input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active {
+    background-color: #ffad42;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
 }
 p {
-    margin: 0 0 10px;
+    margin-top: 20px;
+    height: 60px;
+    font-size: 16px;
 }
