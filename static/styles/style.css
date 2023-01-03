@@ -1,5 +1,5 @@
 body {
-    background-color: #000000;
+    background-color: #111;
     color: #ffffff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -28,8 +28,8 @@ h1 {
 }
 
 select {
-    background-color: #000000;
-    border: 1px solid #000000;
+    background-color: #111;
+    border: 1px solid #111;
     border-radius: 4px;
     color: #ffffff;
     font-size: 14px;
@@ -40,14 +40,14 @@ select {
 }
 
 select:hover, select:focus, select:active {
-    background-color: #111;
+    background-color: #222;
     color: #ffffff;
     outline: none;
 }
 
 option {
-    background-color: #000000;
-    border: 1px solid #000000;
+    background-color: #111;
+    border: 1px solid #111;
     border-radius: 4px;
     color: #ffffff;
     font-size: 14px;
@@ -58,8 +58,8 @@ option {
 }
 
 input[type=text] {
-    background-color: #000000;
-    border: 1px solid #000000;
+    background-color: #111;
+    border: 1px solid #111;
     border-radius: 4px;
     color: #ffffff;
     font-size: 14px;
@@ -73,7 +73,7 @@ input[type=text] {
 }
 
 input[type=text]:focus, input[type=text]:hover, input[type=text]:active {
-    background-color: #111;
+    background-color: #222;
     color: #ffffff;
     outline: none;
 
