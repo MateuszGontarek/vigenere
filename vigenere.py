@@ -1,12 +1,15 @@
 def vigenere(text, key, want):
-    result = ''
+    result, letterCount = '', 0
 
-    for i in range(len(text)):
-        if text[i].isalpha():
-            toAdd = ord("A") if text[i].isupper() else ord("a")
-            keyLetter = ord(key[i % len(key)]) if want == "encrypt" else - ord(key[i % len(key)])
-            result += chr((ord(text[i]) + keyLetter - toAdd) % 26 + toAdd)
+    for i in text:
+        if i.isalpha():
+            keyLetter = ord(key[letterCount % len(key)]) - ord('A') \
+                        if key[letterCount % len(key)].isupper() \
+                        else ord(key[letterCount % len(key)]) - ord('a')
+            keyLetter = keyLetter if want == "encrypt" else - keyLetter
+            toAdd = ord('A') if i.isupper() else ord('a')
+            result += chr((ord(i) + keyLetter - toAdd) % 26 + toAdd)
+            letterCount += 1
         else:
-            result += text[i]
-
+            result += i
     return result
